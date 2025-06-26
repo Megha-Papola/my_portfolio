@@ -1,0 +1,103 @@
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left-section {
+  flex: 1;
+  background-color: #000; /* black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #fff; /* white */
+  color: #000;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-section h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.right-section h2 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #00bfff;
+}
+
+.right-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-buttons .btn {
+  background-color: #000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.home-buttons .btn:hover {
+  background-color: #333;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.btn-outline:hover {
+  background-color: #f1f1f1;
+}
+/* Profile image animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.left-section {
+  flex: 1;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animate only the image */
+.image-wrapper {
+  animation: fadeInScale 1.2s ease-out;
+}
+
+/* Profile image styling */
+.profile-img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
